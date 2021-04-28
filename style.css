@@ -55,8 +55,9 @@ p {
 #section-a {
     background: #eaeaea;
     color: #333;
-    padding-bottom: 2em;
+    padding: 0 1.5em;
 }
+
 
 #section-b {
     padding: 2em 1em 1em;
@@ -85,7 +86,7 @@ p {
 }
 
 #section-d .box {
-    background: #2690d4;
+    background: #0f1a22;
 }
 
 #main-footer {
@@ -95,3 +96,62 @@ p {
     text-align: center;
 }
 
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-github {
+    background: #000;
+    color: #fff;
+  }
+
+  @media(min-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    .content-wrap,
+    #section-b ul {
+        grid-column: 2/4;
+    }
+
+    .box,
+    #main-footer div {
+        grid-column: span 4;
+    }
+
+    #section-a {
+        display: flex;
+        padding: 0 1.5em;
+    }
+
+    #section-b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #section-b li {
+        width: 30%;
+    }
+
+  }
