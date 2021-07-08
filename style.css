@@ -58,6 +58,14 @@ p {
     padding: 0 1.5em;
 }
 
+#section-a .content-wrap .content-title {
+    text-align: center;
+}
+
+#section-a li {
+    list-style: none;
+    display: inline;
+}
 
 #section-b {
     padding: 2em 1em 1em;
@@ -124,7 +132,7 @@ p {
     color: #fff;
   }
 
-  @media(min-width: 600px) {
+  @media(min-width: 800px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
