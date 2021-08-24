@@ -132,7 +132,7 @@ p {
     color: #fff;
   }
 
-  @media(min-width: 500px) {
+  @media(min-width: 1024px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
