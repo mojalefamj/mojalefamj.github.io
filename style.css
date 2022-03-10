@@ -1,165 +1,119 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #333;
-    color: #FFF;
-    font-size: 1em;
-    line-height: 1.5;
-    text-align: center;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 100px;
 }
 
-img {
-    display: block;
-    width: 100%;
-    height: auto;
+.section {
+  height: 100vh;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 1em 0;
+#home {
+  background: #ffffff;
+  background-image: url("img/meanwhile_logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+h1 {
+  font-size: 48px;
+  padding-top: 150px;
 }
 
 p {
-    margin: 0;
-    padding: 1em 0;
+  padding-left: 30px;
+  font-size: 22px;
+  color: black;
 }
 
-#showcase {
-    min-height: 450px;
-    color: #fff;
-    text-align: center;
+#about {
+  background: #ffffff;
+  align-items: center;
+  padding-left: 100px;
 }
 
-#showcase .bg-image {
-    position: absolute;
-    background: #333 url('img/bg_img.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 450px;
-    z-index: -1;
-    opacity: 0.2;
+#clients {
+  background: #ffffff;
 }
 
-#showcase h1 {
-    padding-top: 100px;
-    padding-bottom: 0;
+#work {
+  background: #ffffff;
 }
 
-#showcase .content-wrap,
-#section-a .content-wrap {
-    padding: 0 1.5em;
+#contact {
+  background: #ffffff;
 }
 
-#section-a {
-    background: #eaeaea;
-    color: #333;
-    padding: 0 1.5em;
+.section {
+  padding: 5px;
+  border-bottom-color: lightgrey;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
 }
 
-#section-a .content-wrap .content-title {
-    text-align: center;
+.client-list {
+  display: flex;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
 }
 
-#section-a li {
-    list-style: none;
-    display: inline;
+.client-list li {
+  -ms-flex-prefered-size: 25%;
+  flex-basis: 25%;
+  text-align: center;
+  height: 180px;
+  list-style: none;
 }
 
-#section-b {
-    padding: 2em 1em 1em;
+.nav {
+  --nav-gap: 15px;
+  padding: var(--nav-gap);
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-#section-b ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.nav-item {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: var(--nav-gap);
 }
 
-#section-b li {
-    margin-bottom: 1em;
-    background: #fff;
-    color: #333;
+.nav-link:hover ~ .nav-label {
+  opacity: 1;
 }
 
-.card-content {
-    padding: 1.5em;
+.nav-label {
+  color: #000000;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.1s;
 }
 
-#section-c {
-    background: #fff;
-    color: #333;
-    padding: 2em;
+.nav-link {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  height: var(--nav-gap);
+  margin-left: var(--nav-gap);
+  transition: transform 0.1s;
+  width: var(--nav-gap);
 }
 
-#section-d .box {
-    background: #0f1a22;
+.nav-link-selected {
+  background: #000000;
+  transform: scale(1.4);
 }
 
-#main-footer {
-    padding: 2em;
-    background: #000;
-    color: #fff;
-    text-align: center;
+.outer-footer {
+  padding: 10px;
+  text-align: left;
+  color: gray;
+  font-size: 15px;
+  background-color: #ffffff ;
 }
-
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-  .fa:hover {
-    opacity: 0.7;
-  }
-
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-
-  .fa-github {
-    background: #000;
-    color: #fff;
-  }
-
-  @media(min-width: 1024px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-    }
-
-    .content-wrap,
-    #section-b ul {
-        grid-column: 2/4;
-    }
-
-    .box,
-    #main-footer div {
-        grid-column: span 4;
-    }
-
-    #section-a {
-        display: flex;
-        padding: 0 1.5em;
-    }
-
-    #section-b ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #section-b li {
-        width: 30%;
-    }
-
-  }
