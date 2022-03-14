@@ -3,15 +3,21 @@ html {
 }
 
 @font-face {
-  font-family: 'meanwhile';
+  font-family: 'meanwhileBody';
+  src: url(Din/DINLightAlternate.ttf);
+}
+
+@font-face {
+  font-family: 'meanwhileParagraph';
   src: url(Din/DINLightAlternate.ttf);
 }
 
 body {
-  font-family: "meanwhile", sans-serif;
+  font-family: "meanwhileBody", sans-serif;
   margin: 0;
   padding: 100px;
   font-size: 40px;
+  color: rgb(138, 134, 134);
 }
 
 .section {
@@ -34,12 +40,14 @@ body {
 h1 {
   font-size: 48px;
   padding-top: 150px;
+  color: #000000;
 }
 
 p {
   padding-left: 30px;
   font-size: 22px;
   color: black;
+  font-family: "meanwhileParagraph", sans-serif;
 }
 
 .client-list {
