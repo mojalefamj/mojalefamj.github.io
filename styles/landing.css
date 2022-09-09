@@ -286,11 +286,11 @@ details[open] div {
     align-items: center;
     justify-content: center;
     width: 25%;
-    padding: 1px 0px;
-    background-color: #99379c;
+    padding: 1px;
+    background-color: #56a7da;
     height: 75px;
     margin-left: 1000px;
     margin-top: 80px;
-
+    border-radius: 25px;
 }
 
