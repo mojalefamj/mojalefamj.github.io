@@ -7,55 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frequently Asked Questions</title>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/landing.css">
-    <script src="js/style.js"></script>
+    <link rel="stylesheet" href="landing.css">
+    <script src="style.js"></script> 
 
 </head>
 
 <body>
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="landing.html">Dashboard</a>
-    <a href="qualifications.html">Qualifications</a>
-    <a href="drivers.html">Drivers Licence</a>
-    <a href="medical.html">Medical Records</a>
-    <a href="rica.html">RICA</a>
-    <a href="FAQ.html">FAQ</a>
-</div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="qualifications.html">Qualifications</a>
+        <a href="drivers.html">Drivers Liscence</a>
+        <a href="medical.html">Medical Records</a>
+        <a href="rica.html">RICA</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="landing.html">Dashboard</a>
+      </div>
 
 
-<div id="main">
-    <h1 class="Welcome">Drivers Licence</h1>
-    <div class="slogan">
-        <h2>Digi<span>Fy</span></h2>
-    </div>
+      <div id="main">
+        <h1 class="Welcome" align= "centre">Drivers Liscence</h1>
+          <div class="slogan">
+              <h2>Digi<span>Fy</span> </h2>
+          </div>
+          
 
-
-    <span style="color: black; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
-    <div class="action">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+      <div class="action">
         <div class="profile" onclick="menuToggle(); ">
-            <img src="img/icon.jpg" alt="profile icon">
+            <img src="icon.jpg" alt="profile icon">
         </div>
         <div class="menu">
             <ul>
-                <li><img src="img/logout.png"> <a href="index.html">logout</a></li>
+                <li> <img src="logout.png"> <a href="#">logout</a> </li>
+                <li> <img src="logout.png"> <a href="#">logout</a> </li>
+                <li> <img src="logout.png"> <a href="#">logout</a> </li>
+    
+    
             </ul>
+    
+    
         </div>
-
+        
+    </div>
+    
     </div>
 
-</div>
-<div class="information">
-    <p>
-        licenseCode: <span id="licenseCode"></span>
-        <br>
-        validity: <span id="validity"></span>
-        <br>
-        driverRestrictions: <span id="driverRestrictions"></span>
-        <br>
-        prDPCat: <span id="prDPCat"></span>
-    </p>
-</div>
+
 </body>
+
 
 </html>
