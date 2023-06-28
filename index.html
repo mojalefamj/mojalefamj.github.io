@@ -1,75 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles/style.css">
+<html lang="en>">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=10">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Mojalefa Obed Mohlamonyane</title>
+    </head>
+    <body>
+        <header id="showcase" class="grid">
+            <div class="bg-image"></div>
+            <div class="content-wrap">
+            <h1>Welcome</h1>
+            <p>I am Mojalefa Mohlamonyane, a vibrant computer geek and a software developer.
+                 I studied National Diploma in IT at Tshwane University of Technology (not completed)
+                 and took various courses online to uplift my skills and knowledge. I hold a certificate of Android mobile development,
+                 and an Amazon AWS fundamentals qualification.
+                 I do consultancy work in my neighborhood helping clients with anything computers, 
+                 advice, support, and technical stuff. Besides IT I spend my time playing music with a band 
+                 and playing video games. I am a researcher, hard worker, team player and very energetic at tackling 
+                 challenges and helping other people get through challenges. A problem solver by birth.<br> I love music!</p>
+                </div>
+        </header>
 
-</head>
-<body>
-<style>
-    body {
-        background-image: url('img/loginpic.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-    }
-</style>
-<div class="slogan">
-    <h2>Digi<span>Fy</span></h2>
-</div>
+        <main id="main">
+            <section id="section-a" class="grid">
+                <div class="content wrap" style="margin: 0 auto; font-weight: bold">
+                    <h2 class="content-title">My Skills</h2>
+                    <div class="content-text">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Sql</li>
+                            <li>PHP</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>Linux</li>
+                            <li>API gateway</li>
+                            <li>Amazon Lambda</li>
+                            <li>DynamoDB</li>
+                            <li>Amazon Lex</li>
+                            <li>S3</li>
+                            <li>Cloudfornt CDN</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-<div class="wrapper">
-    <div class="title-text">
+            <section id="section-b" class="grid">
+                <ul>
+                    <li>
+                        <div class="card">
+                            <img src="img/img_1.jpg" alt="">
+                            <div class="card-content">web project</div>
+                            <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="img/img_1.jpg" alt="">
+                            <div class="card-content">Mobile Development project</div>
+                            <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="img/img_1.jpg" alt="">
+                            <div class="card-content">Design Thinking project</div>
+                            <p></p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
+            <section id="section-c" class="grid">
+                <div class="content-wrap">
+                    <h2 class="content-title">I can handle anything code</h2>
+                    <p>"Not just cool software but software that improve people's lives" <br> Mojalefa</p>
+                </div>
+            </section>
 
-    </div>
-    <div class="form-container">
-        <div class="slide-controls">
-            <input type="radio" name="slide" id="login" checked>
-            <input type="radio" name="slide" id="signup">
-            <label for="login" class="slide login">Login</label>
-            <label for="signup" class="slide signup"><a href="landing.html"></a> Signup</label>
-            <div class="slider-tab"></div>
-        </div>
-        <div class="form-inner">
-            <form action="landing.html" class="login">
-                <div class="field">
-                    <input type="text" placeholder="Email Address" required>
+            <section id="section-d" class="grid">
+                <div class="box">
+                    <h2 class="content-title">Connect with me</h2>
+                    <a href="https://twitter.com/mj_obed" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://za.linkedin.com/in/mojalefa-obed-5374249a" class="fa fa-linkedin" target="_blank"></a>
+                    <a href="https://github.com/mojalefamj" class="fa fa-github" target="_blank"></i></a>
+                    <p>mojalefaobed@yahoo.com</p>
                 </div>
-                <div class="field">
-                    <input type="password" placeholder="Password" required>
-                </div>
-
-                <div class="field btn">
-                    <div class="btn-layer"></div>
-                    <input type="submit" value="Login "><a href="landing.html"></a>
-                </div>
-                <div class="signup-link">
-                    Not a member? <a href="registration.html">Signup now</a>
-                </div>
-
-            </form>
-            <form action="landing.html" class="signup">
-                <div class="field">
-                    <input type="text" placeholder="Email Address" required>
-                </div>
-                <div class="field">
-                    <input type="password" placeholder="Password" required>
-                </div>
-                <div class="field">
-                    <input type="password" placeholder="Confirm password" required>
-                </div>
-                <div class="field btn">
-                    <div class="btn-layer"></div>
-                    <input type="submit" value="Signup">
-                </div>
-
-            </form>
-        </div>
-    </div>
-</div>
-</body>
+            </section>
+        </main>
+        <footer id="main-footer" class="grid">
+            <div><small>Copyright © mojalefamj 2021</small></div>
+        </footer>
+    </body>
 </html>
